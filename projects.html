@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Projetos - HealthTalk, NetGuardian e LabHub - Aplicações desenvolvidas em Java e Node.js">
+    <meta name="keywords" content="projetos, portfolio, healthtalk, netguardian, labhub, github">
+    <meta name="author" content="Vitor">
+    <title>Projetos - Vitor Portfólio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">Vitor Brito de Bastos</a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav.home">Início</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="projects.html" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contato</a></li>
+            </ul>
+
+            <div class="navbar-right">
+                <button class="btn-lang" onclick="toggleLanguage()" title="Switch language">
+                    <span class="lang-flag">🇧🇷</span>
+                    <span class="lang-label" id="lang-label-nav">EN</span>
+                </button>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="section">
+        <h1 class="section-title fade-in" data-i18n="projects.title">Meus Projetos</h1>
+        <p class="section-subtitle fade-in" data-i18n="projects.subtitle">
+            Confira os projetos que desenvolvi, cada um com seu propósito único e desafios técnicos
+        </p>
+
+        <div class="grid grid-3" style="margin-top: 3rem;">
+            <!-- HealthTalk Project -->
+            <div class="project-card fade-in">
+                <h3 class="project-title" data-i18n="projects.healthtalk.name">HealthTalk</h3>
+                <p class="project-description" data-i18n="projects.healthtalk.desc">
+                    Uma aplicação inovadora criada para auxiliar pessoas que enfrentam dificuldades relacionadas
+                    à saúde mental, oferecendo um espaço seguro para conversar com uma Inteligência Artificial
+                    que fornece apoio inicial, escuta ativa e orientações básicas.
+                </p>
+
+                <h4 style="color: var(--accent-purple); margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem;" data-i18n="projects.techUsed">
+                    Tecnologias Utilizadas
+                </h4>
+                <div class="tech-stack">
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">REST API</span>
+                    <span class="tech-badge">IA Integration</span>
+                </div>
+
+                <h4 style="color: var(--accent-purple); margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem;" data-i18n="projects.mainFeatures">
+                    Funcionalidades Principais
+                </h4>
+                <ul class="project-features">
+                    <li data-i18n="projects.healthtalk.f1">Cadastro e autenticação de usuários</li>
+                    <li data-i18n="projects.healthtalk.f2">Armazenamento seguro de dados no MySQL</li>
+                    <li data-i18n="projects.healthtalk.f3">Chat integrado com Inteligência Artificial</li>
+                    <li data-i18n="projects.healthtalk.f4">Interface intuitiva e organizada por menu</li>
+                    <li data-i18n="projects.healthtalk.f5">Sistema de apoio emocional 24/7</li>
+                </ul>
+
+                <a href="https://github.com/vitrolaa/healthTalk" target="_blank" class="project-link"
+                    style="margin-top: 1rem; display: inline-flex;" data-i18n="projects.viewGithub">
+                    Ver no GitHub →
+                </a>
+            </div>
+
+            <!-- NetGuardian Project -->
+            <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                <h3 class="project-title" data-i18n="projects.netguardian.name">NetGuardian</h3>
+                <p class="project-description" data-i18n="projects.netguardian.desc">
+                    Sistema completo de monitoramento de dispositivos de rede, oferecendo uma solução simples,
+                    segura e intuitiva para verificar conectividade, armazenar logs e gerenciar um inventário
+                    de dispositivos em um único lugar. Essencial para ambientes onde a estabilidade de rede é crítica.
+                </p>
+
+                <h4 style="color: var(--accent-purple); margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem;" data-i18n="projects.techUsed">
+                    Tecnologias Utilizadas
+                </h4>
+                <div class="tech-stack">
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">Express</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">SQLite</span>
+                    <span class="tech-badge">REST API</span>
+                </div>
+
+                <h4 style="color: var(--accent-purple); margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem;" data-i18n="projects.mainFeatures">
+                    Funcionalidades Principais
+                </h4>
+                <ul class="project-features">
+                    <li data-i18n="projects.netguardian.f1">Cadastro completo de dispositivos (nome, IP, localização)</li>
+                    <li data-i18n="projects.netguardian.f2">Teste de conectividade via Ping em tempo real</li>
+                    <li data-i18n="projects.netguardian.f3">Armazenamento e consulta de logs históricos</li>
+                    <li data-i18n="projects.netguardian.f4">Inventário organizado de todos os dispositivos</li>
+                    <li data-i18n="projects.netguardian.f5">Interface web simples e intuitiva</li>
+                </ul>
+
+                <a href="https://github.com/vitrolaa/NetGuardian" target="_blank" class="project-link"
+                    style="margin-top: 1rem; display: inline-flex;" data-i18n="projects.viewGithub">
+                    Ver no GitHub →
+                </a>
+            </div>
+
+            <!-- LabHub Project -->
+            <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                <h3 class="project-title" data-i18n="projects.labhub.name">LabHub</h3>
+                <p class="project-description" data-i18n="projects.labhub.desc">
+                    Sistema robusto de gerenciamento e monitoramento de hardware que facilita o controle eficiente
+                    do inventário e uso dos recursos. Desenvolvido com design intuitivo, permite gerenciar equipamentos,
+                    técnicos e receber notificações importantes sobre manutenção.
+                </p>
+
+                <h4 style="color: var(--accent-purple); margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem;" data-i18n="projects.techUsed">
+                    Tecnologias Utilizadas
+                </h4>
+                <div class="tech-stack">
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">JDBC</span>
+                </div>
+
+                <h4 style="color: var(--accent-purple); margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1.1rem;" data-i18n="projects.mainFeatures">
+                    Funcionalidades Principais
+                </h4>
+                <ul class="project-features">
+                    <li data-i18n="projects.labhub.f1">Cadastro e gerenciamento de equipamentos</li>
+                    <li data-i18n="projects.labhub.f2">Controle de disponibilidade e status</li>
+                    <li data-i18n="projects.labhub.f3">Notificações de manutenção e vencimento de garantias</li>
+                    <li data-i18n="projects.labhub.f4">Sistema de lotes para organização</li>
+                    <li data-i18n="projects.labhub.f5">Criação e gerenciamento de usuários</li>
+                    <li data-i18n="projects.labhub.f6">Gerenciamento completo de técnicos</li>
+                </ul>
+
+                <a href="https://github.com/vitrolaa/LabHub" target="_blank" class="project-link"
+                    style="margin-top: 1rem; display: inline-flex;" data-i18n="projects.viewGithub">
+                    Ver no GitHub →
+                </a>
+            </div>
+        </div>
+
+
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="contact.html" class="btn btn-primary" data-i18n="nav.contact">Entre em Contato</a>
+            <a href="https://github.com/vitrolaa" target="_blank" class="btn btn-secondary" data-i18n="projects.moreGithub">Ver Mais no GitHub</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p data-i18n="footer.rights">&copy; 2025 Vitor. Todos os direitos reservados.</p>
+        <p data-i18n="footer.made">Desenvolvido com dedicação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
