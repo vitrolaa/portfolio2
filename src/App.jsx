@@ -10,7 +10,7 @@ import Contact from './pages/Contact'
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio2">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
